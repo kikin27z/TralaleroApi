@@ -1,0 +1,67 @@
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.detail-container {
+  width: 95%;
+}
+
+.detail-title {
+  font-size: 32px;
+}
+
+.detail-subtitle {
+  font-size: 24px;
+}
+
+.detail-img{
+  width: 100%;
+}
+.detail-description {
+  font-size: 16px;
+}
+
+.detail-memes {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.detail-memes li {
+  color: white;
+  background-color: rgb(39, 39, 236);
+  padding: 4px 8px;
+  text-align: center;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  .detail-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 16px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #00000030;
+    border-radius: 16px;
+    overflow: hidden;
+    height: 450px;
+  }
+
+  .detail-img {
+    object-fit: cover;
+    height: 100%;
+  }
+
+  .detail-info {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
