@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import  { useEffect, useState } from 'react'
 import type { StatsBrainRotType } from '../types/brainrot.type';
 import { getStats } from '../services/api';
 

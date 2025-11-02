@@ -30,7 +30,7 @@ export async function getBrainRotsByName(brainrotName: string){
   const url = `${urlApi}personajes/search/${brainrotName}`;
   return fetch(url)
   .then((response) => validateResponse<ApiResponse<BrainRotType[]>>(response))
-  .then(data=> data).catch(e => null);
+  .then(data=> data).catch(() => null);
 }
 
 export async function getBrainRotsByPopularity(level: string){
@@ -45,6 +45,3 @@ export async function getStats(){
   .then((response) => validateResponse<ApiResponse<StatsBrainRotType>>(response))
   .then(data=> data);
 }
-
-
-const d = await getBrainRots();
